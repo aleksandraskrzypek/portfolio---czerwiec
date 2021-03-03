@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    margin:0;
+    background-color: rgb(245, 214, 214);
+   }
+
+   .item1 { grid-area: jeden; }
+   .item2 { grid-area: dwa; }
+   .item3 { grid-area: trzy; }
+   .item4 { grid-area: cztery; }
+   .item5 { grid-area: piec; }
+   .item6 { grid-area: szesc; }
+   .item7 { grid-area: siedem; }
+   .item8 { grid-area: osiem; }
+   .item9 { grid-area: dziewiec; }
+   .item10 { grid-area: dziesiec; }
+   .item11 { grid-area: jedenascie; }
+   .item12 { grid-area: dwanascie; }
+   .item13 { grid-area: trzynascie; }
+   .item14 { grid-area: czternascie; }
+   .item15 { grid-area: pietnascie; }
+   .item16 { grid-area: szesnascie; }
+   .item17 { grid-area: siedemnascie; }
+   
+   @media (max-width:500px){
+   .grid-container {
+   display: grid;
+   grid-template-areas:
+   'jeden jeden jeden jeden'
+   'dwa dwa dwa dwa'
+   'trzy trzy trzy trzy'
+   'cztery cztery cztery cztery';       
+    }}
+
+
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+
+.item2 div#slider { overflow: hidden; }
+.item2 div#slider figure img {  height: 300px; width: 20%; float: left; }
+.item2 div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+}
+
+.omniezdjecie img{
+    height: 300px;
+    width: auto;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.omniezdjecie{
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.jeden1 { grid-area: jeden1; }
+.dwa1 { grid-area: dwa1; }
+.trzy1 { grid-area: trzy1; }
+.cztery1 { grid-area: cztery1; }
+.piec1 { grid-area: piec1; }
+.szesc1 { grid-area: szesc1; }
+.siedem1 { grid-area: siedem1; }
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+    'jeden1' 
+    'dwa1'
+    'trzy1'
+    'cztery1'      
+    'piec1' 
+    'szesc1'
+    'siedem1' 
+    'siedem1';
+     }
+
+.jeden1 p{
+    color: hsl(0, 0%, 0%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dwa1 p{
+    color: hsl(0, 0%, 0%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.trzy1 p{
+    color: hsl(0, 0%, 0%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cztery1 p{
+    color: hsl(0, 0%, 0%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.piec1 p{
+    color: hsl(0, 0%, 0%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.szesc1 p{
+    color: hsl(0, 0%, 0%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.siedem1 p{
+    color: hsl(0, 0%, 0%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.siedem1 img{
+    transition: transform .2s;
+    padding: 1%;
+  }

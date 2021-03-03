@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aleksandra Skrzypek</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylekomorki.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.1/dist/circle-progress.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="grid-container">
+
+        <div class="item1">
+           <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#section1">HOME</a></li>
+                            <li><a href="#section2">KONTAKT</a></li>
+                            <li><a href="#section3">ZAINTERESOWANIA</a></li>
+                            <li><a href="#section4">PROJEKTY</a></li>
+                            <li><a href="#section5">O MNIE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+  
+            </div>
+  
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()"><img src="menupasek.png"></span>
+        </div>
+
+        <div class="item2">
+            <div id="slider">
+            <figure>
+            <img src="slider5.jpg">
+            <img src="slider2.jpg">
+            <img src="slider3.jpg">
+            <img src="slider4.jpg">
+            <img src="slider5.jpg">
+            </figure>
+            </div>
+        </div>
+
+        <div class="item3">
+            <div class="omniezdjecie">
+                <img src="omnie.jpg">     
+            </div>
+        </div>
+
+        <div class="item4">
+            <div class="grid-container2">
+                <div class="jeden1">
+                    <img src="imie.png" div class="iconyimg" style="float:left">
+                    <strong><p>&nbsp;&nbsp;&nbsp;&nbsp;NAZYWAM SIĘ</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;Aleksandra Skrzypek</p>
+                </div>
+                <div class="dwa1">
+                    <img src="mail.png" div class="iconyimg" style="float:left">
+                    <strong><p>&nbsp;&nbsp;&nbsp;&nbsp;MAIL</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;aleksandraskrzypek97@gmail.com</p>   
+                </div>
+                <div class="trzy1">
+                    <img src="telefon.png" div class="iconyimg" style="float:left">
+                    <strong><p">&nbsp;&nbsp;&nbsp;&nbsp;TELEFON</strong></p><p">&nbsp;&nbsp;&nbsp;&nbsp;507 329 628</p> 
+                </div>
+                <div class="cztery1">
+                    <img src="urodziny.png" div class="iconyimg" style="float:left">
+                    <strong><p">&nbsp;&nbsp;&nbsp;&nbsp;URODZINY</strong></p><p">&nbsp;&nbsp;&nbsp;&nbsp;19.09.1997r.</p> 
+                </div>
+                <div class="piec1">
+                    <img src="mieszkam.png" div class="iconyimg" style="float:left">
+                    <strong><p">&nbsp;&nbsp;&nbsp;&nbsp;JESTEM</strong></p><p">&nbsp;&nbsp;&nbsp;&nbsp;Polką</p>  
+                </div>
+                <div class="szesc1">
+                    <img src="domek.png" div class="iconyimg" style="float:left">
+                    <strong><p">&nbsp;&nbsp;&nbsp;&nbsp;MIESZKAM</strong></p><p">&nbsp;&nbsp;&nbsp;&nbsp;Kraków, Polska</p> 
+                </div>
+                <div class="siedem1">
+                    <strong><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MEDIA SPOŁECZNOŚCIOWE: </p></strong>
+                    <a href="https://www.linkedin.com/in/aleksandra-skrzypek-7575b2188/"><img src="in.png" div class="znaczki"></a>
+                    <a href="https://www.facebook.com/aleksandra.skrzypek.9"><img src="face.png" div class="znaczki"></a>
+                    <a href="https://www.instagram.com/aleks.skrzypek/"><img src="ins.png" div class="znaczki"></a>
+                </div>
+            </div>      
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>
+
+<script>
+    /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
